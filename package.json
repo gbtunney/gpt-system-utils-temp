@@ -1,0 +1,23 @@
+{
+  "name": "@gbt/system-utils",
+  "version": "0.0.1",
+  "description": "WIP:: ChatGPT made work-in-progress boilerplate. SSH + GitHub CLI tooling suite. Name subject to change.",
+  "scripts": {
+    "test": "pnpm exec zsh ./lib/diagnostics/system_diagnostics.sh",
+    "publish:gist": "pnpm exec zsh ./lib/gist-release/gist_and_release.sh",
+    "update:gist": "pnpm exec zsh ./lib/gist-update/update_gist.sh",
+    "docs": "cat ./lib/ssh-overview/ssh_key_overview.md",
+    "publish": "pnpm run publish:gist"
+  },
+  "keywords": ["ssh", "github", "gist", "release", "diagnostics"],
+  "author": "Your Name",
+  "engines": {
+    "node": ">=18.7.0 <22.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "tooling": {
+    "zsh": ">=5.8"
+  },
+  "license": "MIT"
+}
